@@ -51,7 +51,80 @@
      </div>
    </div>
  </nav>
- </body>
+
+ <!-- start of my first background img-->
+  <style>
+    body {
+        margin: 0;
+    }
+
+    .hero-image {
+        background-image: url('background.jpg');  
+        background-size: cover;      /* Makes the image fill the area */
+        background-position: center; /* Centers the image */
+        width: 100%;
+        height: 80vh; /* 80% of the viewport height */
+    }
+
+<div class="hero-image"></div>
+.content-section {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    <!--start of two column section -->
+    /* Left column text */
+    .left-column {
+        flex: 2; /* Takes up more space */
+        background-color: #f8f8f8;
+        padding: 20px;
+    }
+
+    /* Right column button */
+    .right-column {
+        flex: 1; /* Smaller space */
+        display: flex;
+        align-items: center;  /* Center vertically */
+        justify-content: center; /* Center horizontally */
+    }
+
+    .donate-button {
+        background-color: #ff6600;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .donate-button:hover {
+        background-color: #e65c00;}
+</style>
+</head>
+<body>
+
+<!-- Hero Image -->
+<div class="hero-image"></div>
+
+<!-- Two-column section -->
+<div class="content-section">
+    <div class="left-column">
+        <h2>About Our Mission</h2>
+        <p>
+            We are dedicated to making a lasting impact in our community. Your support
+            allows us to provide resources, education, and outreach to those in need.
+            Together, we can create meaningful change.
+        </p>
+    </div>
+    <div class="right-column">
+        <a href="https://your-donation-link.com" class="donate-button">Donate Now</a>
+    </div>
+</div>
+
+</body>
 </html>
 
 
