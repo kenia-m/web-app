@@ -1,230 +1,260 @@
-<!doctype html>
-
+<!--START of need to have-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title >LOGO</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet"
-  >
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-    crossorigin="anonymous"
-  >
-  <link rel="stylesheet" href="./style.css">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!--END of need to have-->
+
+
+ <title>Un Juguete Para Cada Niño</title>
+
+ <!-- Google Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link
+   href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+   rel="stylesheet"
+ >
+
+ <!-- Bootstrap CSS -->
+ <link
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+   rel="stylesheet"
+   integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+   crossorigin="anonymous"
+ >
+
+ <!-- CSS -->
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">Un Juguete Para Cada Niño</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-           <a class="nav-link" href="#whoweare">WHO WE ARE</a>
+
+<!-- START Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+   <div class="container-fluid">
+     <a class="navbar-brand" href="./index.html">Un Juguete Para Cada Niño</a>
+     <button
+       class="navbar-toggler"
+       type="button"
+       data-bs-toggle="collapse"
+       data-bs-target="#navbarSupportedContent"
+       aria-controls="navbarSupportedContent"
+       aria-expanded="false"
+       aria-label="Toggle navigation"
+     >
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+            <a class="nav-link" href="#whoweare">WHO WE ARE</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="#whatwedo">WHAT WE DO</a>
+            <a class="nav-link" href="#whatwedo">WHAT WE DO</a>
          </li>
-          <li class="nav-item">
-           <a class="nav-link" href="#getinvolved">GET INVOLVED</a>
+         <li class="nav-item">
+            <a class="nav-link" href="#getinvolved">OUR STORY</a>
          </li>
-           <a class="nav-link" href="#communityspotlight">COMMUNITY SPOTLIGHT</a>
+         <li class="nav-item">
+            <a class="nav-link" href= "#communityspotlight">COMMUNITY SPOTLIGHT</a>
          </li>
        </ul>
      </div>
-   </div>
- </nav>
+  </div>
+</nav>
+<!-- END Navbar -->
 
- <!-- start of my first background img-->
-  <style>
-    body {
-        margin: 0;
-    }
-
-    .hero-image {
-        background-image: url('background.jpg');  
-        background-size: cover;      /* Makes the image fill the area */
-        background-position: center; /* Centers the image */
-        width: 100%;
-        height: 80vh; /* 80% of the viewport height */
-    }
-
-<div class="hero-image"></div>
-.content-section {
-        display: flex;
-        padding: 20px;
-        gap: 20px;
-    }
-
-    <!--start of two column section -->
-    /* Left column text */
-    .left-column {
-        flex: 2; /* Takes up more space */
-        background-color: #f8f8f8;
-        padding: 20px;
-    }
-
-    /* Right column button */
-    .right-column {
-        flex: 1; /* Smaller space */
-        display: flex;
-        align-items: center;  /* Center vertically */
-        justify-content: center; /* Center horizontally */
-    }
-
-    .donate-button {
-        background-color: #d2c3c395;
-        color: white;
-        padding: 15px 30px;
-        border: none;
-        border-radius: 5px;
-        font-size: 18px;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    .donate-button:hover {
-        background-color: #524942;}
-</style>
-</head>
-<body>
-
-<!-- Hero Image -->
-<div class="hero-image"></div>
-
-<!-- Add space here-->
- <div class="container">
-  <div class="col"><div class="box"></div></div><div>
-</div>
-</div>
-
-<!-- Two-column section -->
-<div class="content-section">
-    <div class="left-column">
-        <h2>Giving Toys. Planting Smiles. 
-          <br>Show Your Support. 
-          <br> Change Their World
-        </h2>
+<!--START of first page-->
+<section class="main-intro container my-5 fade-in">
+  <div class="row align-items-center">
+    <!-- Left: Image -->
+    <div class="col-md-6 text-center">
+      <img src="main1.jpg" alt="Nonprofit Work" class="img-fluid main-image">
     </div>
-    <div class="right-column">
-        <a href="https://your-donation-link.com" class="donate-button">Donate A Toy Now</a>
-    </div>
-</div>
-<!--WHAT WE DO section: All img cards code -->
 
+    <!-- Right: Text + Button -->
+    <div class="col-md-6 text-center">
+      <p class="lead">
+        Aiming to bring a joyful holiday to children in need by delivering toys and sweets.
+      </p>
+      <a href="#donate" class="btn donate-btn btn-lg mt-3">Donate Now</a>
+    </div>
+  </div>
+</section>
+<!--END of first page-->
+
+<!--link for nav bar-->
+
+
+<!--START who we are section-->
+<!-- WHO WE ARE SECTION -->
+<section id="who-we-are" class="who-we-are-section">
+    <h2>Who We Are</h2>
+
+    <div class="team-container">
+
+        <!-- Card 1 -->
+        <div class="team-card">
+            <img src="an.JPG" alt="Ana Machuca" class="team-photo">
+            <h3>Ana Machuca</h3>
+            <p class="role">Co-CEO</p>
+            <p>
+                Upon immigrating to the United States, Ana was deeply struck by the contrast between the lives of American children and those in her hometown of Jocotitlán, Mexico. Remembering her own childhood without the joy of opening a new toy, she began collecting donations from friends—many fellow immigrants—to bring joy to children back home.
+            </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="team-card">
+            <img src="kenia.jpg" alt="Kenia Machuca" class="team-photo">
+            <h3>Kenia Machuca</h3>
+            <p class="role">Co-CEO, Web Designer</p>
+            <p>
+                Inspired by her mother’s work, Kenia began gathering donations from teachers and classmates. In 2024, she built this website from scratch through the Dev Mission Pre-Apprenticeship Program, which equips young adults from underserved communities with coding and hardware skills.
+                <a href="https://your-personal-site.com" target="_blank">Visit her personal website</a>.
+            </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="team-card">
+            <img src="mamao.jpg" alt="Otilia Montiel" class="team-photo">
+            <h3>Otilia Montiel</h3>
+            <p class="role">Program Manager</p>
+            <p>
+                A lifelong resident of Santiago de Casandeje, Otilia is known for her leadership and kindness. At Ana’s request, she took on the responsibility of organizing local toy drives, dedicating her free time to ensuring every event runs smoothly despite caring for her ill husband.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Mission -->
+    <div class="mission-section">
+        <h3>Our Story and Mission</h3>
+        <p>
+            Santiago de Casandeje is a rural town in central Mexico, about a three-hour drive from Mexico City. Home primarily to indigenous Mazahua families, it has around 5,000 residents. Many children in the area do not receive toys during the holidays.
+        </p>
+        <p>
+            One of Mexico’s most beloved traditions is <em>Día de los Reyes Magos</em> (Three Kings Day), which commemorates the gifts brought to the newborn Jesus. Our mission is to ensure every child in Santiago de Casandeje enjoys fresh <em>rosca de reyes</em> (sweet bread) and the joy of receiving a new toy on this special day.
+        </p>
+    </div>
+</section>
+
+
+
+ <!--START what we do cards-->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Work</title>
+<section id="whatwedo" class="team-section">
+    <h2 class="section-title">Our Work</h2>
+
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 20px;
-        background-color: #f5f5f5;
-    }
+   body {
+       font-family: Arial, sans-serif;
+       margin: 0;
+       padding: 20px;
+       background-color: #f5f5f5;
+   }
 
-    /* Container for all cards */
-    .card-container {
-        display: flex;
-        justify-content: center;
-        gap: 20px; /* space between cards */
-        flex-wrap: wrap; /* allows wrapping on smaller screens */
-    }
 
-    /* Card styles */
-    .card {
-        background-color: white;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        width: 300px;
-    }
+   /* Container for all cards */
+   .card-container {
+       display: flex;
+       justify-content: center;
+       gap: 20px; /* space between cards */
+       flex-wrap: wrap; /* allows wrapping on smaller screens */
+   }
 
-    .card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
 
-    .card-content {
-        padding: 15px;
-    }
+   /* Card styles */
+   .card {
+       background-color: white;
+       border-radius: 10px;
+       overflow: hidden;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       width: 300px;
+   }
 
-    .card-title {
-        font-size: 1.5em;
-        margin: 0 0 10px 0;
-        color: #333;
-    }
 
-    .card-text {
-        font-size: 1em;
-        color: #666;
-        line-height: 1.5;
-    }
+   .card img {
+       width: 100%;
+       height: 200px;
+       object-fit: cover;
+   }
+
+
+   .card-content {
+       padding: 15px;
+   }
+
+
+   .card-title {
+       font-size: 1.5em;
+       margin: 0 0 10px 0;
+       color: #333;
+   }
+
+
+   .card-text {
+       font-size: 1em;
+       color: #666;
+       line-height: 1.5;
+   }
 </style>
 </head>
 <body>
 
+
 <div class="card-container">
-    <div class="card">
-        <img src="rosca.jpg" alt="Card Image 1">
-        <div class="card-content">
-            <h2 class="card-title">Food</h2>
-            <p class="card-text">
-              La felicidad de recibir un juguete es acompañada por un atole tradicional junto de una crujiente rosca de reyes propio de estas fechas
-            </p>
-        </div>
-    </div>
+   <div class="card">
+       <img src="rosca.jpg" alt="Card Image 1">
+       <div class="card-content">
+           <h2 class="card-title">Rosca and Atole</h2>
+           <p class="card-text">
+              The joy of receiving a toy is complemented by a warm cup of home-made atole de avena and a warm Rosca de Reyes, honoring the flavors and customs of the holiday.
+           </p>
+       </div>
+   </div>
 
-    <div class="card">
-        <img src="toys.jpg" alt="Card Image 2">
-        <div class="card-content">
-            <h2 class="card-title">Toys</h2>
-            <p class="card-text">
-                Pelotas, cochecitos, canicas y hasta bicicletas son algunos de los presentes que año con año reciben los niños de la comunidad indigena mazahua en representación de los Reyes Magos. Todo está hecho realidad por nuestros bondadosos donadores ubicados en Estados Unidos.
 
-            </p>
-        </div>
-    </div>
+   <div class="card">
+       <img src="toys.jpg" alt="Card Image 2">
+       <div class="card-content">
+           <h2 class="card-title">Toy Drive</h2>
+           <p class="card-text">
+              Each year, children of the Mazahua indigenous community receive gifts such as balls, toy cars, marbles, and even bicycles in celebration of Día de los Reyes Magos. This tradition is made possible through the generosity of our donors in the United States.
+           </p>
+       </div>
+   </div>
 
-    <div class="card">
-        <img src="activities.JPG" alt="Card Image 3">
-        <div class="card-content">
-            <h2 class="card-title">Activities</h2>
-            <p class="card-text">
-                More than gifting toys, we are passionate to create a sense of community, something we belive is the essence of this Santiago de Casandeje.
-            </p>
-        </div>
-    </div>
+
+   <div class="card">
+       <img src="activities.JPG" alt="Card Image 3">
+       <div class="card-content">
+           <h2 class="card-title">Community</h2>
+           <p class="card-text">
+               Fostering community is one of the core values of Un Juguete Para Cada Niño. Through activities such as piñatas and raffles, we aim to celebrate the heart of a pueblito like Santiago de Casandeje, its strong sense of togetherness.
+           </p>
+       </div>
+   </div>
 </div>
+ <!--END what we do cards-->
+
 
 </body>
 </html>
-
-<!--COMMUNITY SPOTLIGHT Section-->
-      
+<!-- START Slideshow Section -->
+<div class="offset-nav">
+    <div class="slideshow-container">
+        <img src="main2.jpg" class="slide active" alt="Slide 1">
+        <img src="main2.jpg" class="slide" alt="Slide 2">
+        <img src="main3.jpg" class="slide" alt="Slide 3">
+        <img src="main4.jpg" class="slide" alt="Slide 4">
+        <img src="main5.jpg" class="slide" alt="Slide 5">
+        <img src="main6.jpg" class="slide" alt="Slide 6">
+        <img src="main7.jpg" class="slide" alt="Slide 7">
+    </div>
+<!-- END Slideshow Section -->
 
 </body>
 </html>
-
-
-
-

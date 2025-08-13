@@ -1,6 +1,185 @@
-.box {
-    background-color: white;
-    border: 1px solid white;
-    min-height:50px;
-    font-size: 2rem;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Offset for fixed navbar */
+.offset-nav {
+    padding-top: 70px; /* Adjust if navbar height changes */
+}
+
+/* START styling for main page */
+.main-image {
+    width: 100%;
+    height: 80vh; /* Keeps the height relative to viewport */
+    object-fit: cover; /* Keeps proportions, crops if necessary */
+    object-position: center; /* Centers the image */
+    display: block;
+}
+
+
+.main-intro p {
+    font-size: 1.25rem;
+    line-height: 2.6;
+}
+
+/* Custom donate button color */
+.donate-btn {
+    background-color: #e63946; /* Rich red */
+    border: none;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.donate-btn:hover {
+    background-color: #d62828;
+    transform: scale(1.05);
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Each slide image */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Active slide */
+.active {
+    opacity: 1;
+}
+
+/* Two-column section */
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-column {
+    flex: 2;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.right-column {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.donate-button:hover {
+    background-color: #e65c00;
+}
+/* END styling for main page */
+
+
+.who-we-are-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.who-we-are-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 300px;
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 4px solid #eee;
+}
+
+.role {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.team-card a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.team-card a:hover {
+    text-decoration: underline;
+}
+
+.mission-section {
+    margin-top: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
