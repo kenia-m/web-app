@@ -183,3 +183,9 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
+
+.whatwedo::frist-line {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
