@@ -1,258 +1,291 @@
-<!--START of need to have-->
+<!--Ignore-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <!--END of need to have-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>Un Juguete Para Cada Niño</title>
 
- <title>Un Juguete Para Cada Niño</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 
- <!-- Google Fonts -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link
-   href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-   rel="stylesheet"
- >
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous">
 
- <!-- Bootstrap CSS -->
- <link
-   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-   rel="stylesheet"
-   integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-   crossorigin="anonymous"
- >
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 
- <!-- CSS -->
- <link rel="stylesheet" href="style.css">
+  <!-- Stylying for cards -->
+  <style>
+    /* Container */
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* Styling */
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 1.5em;
+      margin: 0 0 10px 0;
+      color: #333;
+    }
+
+    .card-text {
+      font-size: 1em;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* Slideshow */
+    .slideshow-container {
+      width: 100%;
+      height: 50vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+  </style>
 </head>
+
 <body>
 
 <!-- START Navbar -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-   <div class="container-fluid">
-     <a class="navbar-brand" href="./index.html">Un Juguete Para Cada Niño</a>
-     <button
-       class="navbar-toggler"
-       type="button"
-       data-bs-toggle="collapse"
-       data-bs-target="#navbarSupportedContent"
-       aria-controls="navbarSupportedContent"
-       aria-expanded="false"
-       aria-label="Toggle navigation"
-     >
-       <span class="navbar-toggler-icon"></span>
-     </button>
-     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-         <li class="nav-item">
-            <a class="nav-link" href="#whoweare">WHO WE ARE</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#whatwedo">WHAT WE DO</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#getinvolved">OUR STORY</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href= "#communityspotlight">COMMUNITY SPOTLIGHT</a>
-         </li>
-       </ul>
-     </div>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html">Un Juguete Para Cada Niño</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#whoweare">WHO WE ARE</a></li>
+        <li class="nav-item"><a class="nav-link" href="#whatwedo">WHAT WE DO</a></li>
+        <li class="nav-item"><a class="nav-link" href="#communityspotlight">COMMUNITY SPOTLIGHT</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 <!-- END Navbar -->
 
-<!--START of first page-->
+
+<!-- START Intro -->
 <section class="main-intro container my-5 fade-in">
   <div class="row align-items-center">
-    <!-- Left: Image -->
-    <div class="col-md-6 text-center">
-      <img src="main2.jpg" alt="Nonprofit Work" class="img-fluid main-image">
+    
+    <!-- Left column: slideshow (no text-center here) -->
+    <section class="main-intro container my-5 fade-in">
+  <div class="row align-items-center">
+    
+    <!-- Left column: slideshow (no text-center here) -->
+    <div class="col-md-6">
+      <div class="hero-slideshow">
+        <div class="slideshow-container">
+          <img src="slide1.jpg" class="slide active" alt="Slide 1">
+          <img src="slide2.jpg" class="slide" alt="Slide 2">
+          <img src="slide3.jpg" class="slide" alt="Slide 3">
+          <img src="slide4.jpg" class="slide" alt="Slide 4">
+          <img src="slide5.jpg" class="slide" alt="Slide 5">
+        </div>
+      </div>
     </div>
 
-    <!-- Right: Text + Button -->
+    <!-- Right column: text (center text here only) -->
     <div class="col-md-6 text-center">
-      <p class="lead">
-        Aiming to bring a joyful holiday to children in need by delivering toys and sweets.
-      </p>
-      <a href="#donate" class="btn donate-btn btn-lg mt-3">Donate Now</a>
+      <h2>Our Mission</h2>
+      <p>Aiming to bring a joyful holiday to children in Santiago Casandeje by delivering toys and sweets, and celebrating our cultural traditions and community.</p>
+      <button class="btn btn-primary">Donate Now</button>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll(".slide");
+  const totalSlides = slides.length;
+
+  function showNextSlide() {
+    slides[currentIndex].classList.remove("active");
+    currentIndex = (currentIndex + 1) % totalSlides;
+    slides[currentIndex].classList.add("active");
+  }
+
+  setInterval(showNextSlide, 3000);
+</script>
+   
+</section>
+<!-- END Intro -->
+
+<!-- START  WHO WE ARE -->
+<section id="whoweare" class="who-we-are-section">
+  <h2 class="whatwedo-title who-we-are-section">Who We Are</h2>
+
+  <div class="team-container">
+    <!-- Card 1 -->
+    <div class="team-card">
+      <img src="ana.JPG" alt="Ana Machuca" class="team-photo">
+      <h3>Ana Machuca</h3>
+      <p class="role">Co-CEO</p>
+      <p>Upon immigrating to the United States, Ana was deeply struck by the contrast between the lives of American children and those in her hometown of Jocotitlán, Mexico. Remembering her own childhood without the joy of opening a new toy, she began collecting donations from friends, many fellow Latino immigrants like her, to bring joy to children back home.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="team-card">
+      <img src="kenia.jpg" alt="Kenia Machuca" class="team-photo">
+      <h3>Kenia Machuca</h3>
+      <p class="role">Co-CEO, Web Designer</p>
+      <p>Alongside her mother, Kenia began gathering donations from teachers and classmates. In the summer of 2025, she built this website through her participation in the Dev Mission <a href="https://devmission.org/free-coding-classes/" target="_blank">Pre-Apprenticeship Program</a>, which equips young adults from underserved communities with coding and hardware skills. Visit her personal website <a href="https://kenia-m.github.io/about-me/" target="_blank">here</a>.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="team-card">
+      <img src="mamao.jpg" alt="Otilia Montiel" class="team-photo">
+      <h3>Otilia Montiel</h3>
+      <p class="role">Program Manager</p>
+      <p>As a native and current resident of Santiago Casandeje, Otilia serves as the program manager. From purchasing toys and food to hosting events in her home and coordinating local toy drives, she dedicates her free time to making every celebration possible—all while caring for her ill husband. Otilia is well known in her community for her kindness and leadership.</p>
+    </div>
+  </div>
+
+  <!-- Mission -->
+  <div class="mission-section">
+    <h3>Cultural Insight</h3>
+    <p>Santiago Casandeje is a rural town in central Mexico, about a three-hour drive from Mexico City. Home primarily to indigenous Mazahua families, it has around 5,000 residents. Many children in the area do not receive toys during the holidays.</p>
+    <p>One of Mexico’s most special traditions is <em>Día de los Reyes Magos</em> (Three Kings Day), which commemorates the gifts brought to the newborn Jesus. Our mission is to ensure every child in Santiago Casandeje enjoys fresh <em>Rosca de Reyes</em> (sweet bread) and the joy of receiving a new toy on this special day.</p>
+  </div>
+</section>
+<!-- END Who We Are -->
+
+<!-- START WHAT WE DO -->
+<section id="whatwedo" class="team-section">
+  <h2 class="whatwedo-title who-we-are-section">What We Do</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="rosca.jpg" alt="Rosca and Atole">
+      <div class="card-content">
+        <h2 class="card-title">Rosca and Atole</h2>
+        <p class="card-text">The joy of receiving a toy is complemented by a warm cup of home-made atole de avena and a warm Rosca de Reyes, honoring the flavors and customs of the holiday.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="toys.jpg" alt="Toy Drive">
+      <div class="card-content">
+        <h2 class="card-title">Toy Drive</h2>
+        <p class="card-text">Each year, children of the Mazahua indigenous community receive gifts such as balls, toy cars, marbles, and even bicycles in celebration of Día de los Reyes Magos. This tradition is made possible through the generosity of our donors in the United States.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="activities.JPG" alt="Community">
+      <div class="card-content">
+        <h2 class="card-title">Community</h2>
+        <p class="card-text">Fostering community is one of the core values of Un Juguete Para Cada Niño. Through activities such as piñatas and raffles, we aim to celebrate the heart of a pueblito like Santiago Casandeje, its strong sense of togetherness.</p>
+      </div>
     </div>
   </div>
 </section>
-<!--END of first page-->
+<!-- END What We Do -->
 
+<!-- Scripts -->
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll(".slide");
+  const totalSlides = slides.length;
 
+  function showNextSlide() {
+    slides[currentIndex].classList.remove("active");
+    currentIndex = (currentIndex + 1) % totalSlides;
+    slides[currentIndex].classList.add("active");
+  }
 
-<!--START who we are section-->
-<section id="who-we-are" class="who-we-are-section">
-    <h2 class="whatwedo-title who-we-are-section">Who We Are</h2>
+  setInterval(showNextSlide, 3000);
+</script>
 
-    <div class="team-container">
+<!-- Community Spotlight Section -->
+<section id="community-spotlight" class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Title -->
+    <h2 class="text-4xl font-bold text-center mb-4">Community Spotlight</h2>
+    <p class="text-lg text-center text-gray-600 mb-12">
+      We have stopped our work because of difficulties with immigration and traveling. However, we will continue our work through this storytelling. This section will be dedicated to showcase the resilience indigenous women in Santiago Casandeje showcase on the daily that might not otherwise be acknowledged. 
+    </p>
+    <p> In memory of Juana Hernandez Montiel, also known as Mamane, this space honors her story and legacy.</p>
 
-        <!-- Card 1 -->
-        <div class="team-card">
-            <img src="an.JPG" alt="Ana Machuca" class="team-photo">
-            <h3>Ana Machuca</h3>
-            <p class="role">Co-CEO</p>
-            <p>
-                Upon immigrating to the United States, Ana was deeply struck by the contrast between the lives of American children and those in her hometown of Jocotitlán, Mexico. Remembering her own childhood without the joy of opening a new toy, she began collecting donations from friends—many fellow immigrants—to bring joy to children back home.
-            </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="team-card">
-            <img src="kenia.jpg" alt="Kenia Machuca" class="team-photo">
-            <h3>Kenia Machuca</h3>
-            <p class="role">Co-CEO, Web Designer</p>
-            <p>
-                Inspired by her mother’s work, Kenia began gathering donations from teachers and classmates. In 2024, she built this website from scratch through the Dev Mission Pre-Apprenticeship Program, which equips young adults from underserved communities with coding and hardware skills.
-                <a href="https://your-personal-site.com" target="_blank">Visit her personal website</a>.
-            </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="team-card">
-            <img src="mamao.jpg" alt="Otilia Montiel" class="team-photo">
-            <h3>Otilia Montiel</h3>
-            <p class="role">Program Manager</p>
-            <p>
-                A lifelong resident of Santiago de Casandeje, Otilia is known for her leadership and kindness. At Ana’s request, she took on the responsibility of organizing local toy drives, dedicating her free time to ensuring every event runs smoothly despite caring for her ill husband.
-            </p>
-        </div>
-
-    </div>
-
-    <!-- Mission -->
-    <div class="mission-section">
-        <h3>Our Story and Mission</h3>
-        <p>
-            Santiago de Casandeje is a rural town in central Mexico, about a three-hour drive from Mexico City. Home primarily to indigenous Mazahua families, it has around 5,000 residents. Many children in the area do not receive toys during the holidays.
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <!-- Text (Left side) -->
+      <div>
+        <h3 class="text-2xl font-semibold mb-4">Mamane</h3>
+        <p class="text-gray-700 mb-4">
+            
+          Mamane’s life began with hardship. Her mother died during childbirth, leaving her father to raise her alone. As an Indigenous man in the early 1900s, he supported them by selling handmade wooden chairs and woven rugs (petates). At times, he traveled for a week at a time to Michoacán—sometimes by train, other times on foot—to sell his work. With no choice, he often left young Mamane at home to care for herself as early as the age of five. Since refrigerators did not exist, he stored food in a basket hung high above the ground to keep insects and animals away. She would climb on a chair to reach it and she learned to ration the food carefully to last for the entire week.
         </p>
-        <p>
-            One of Mexico’s most beloved traditions is <em>Día de los Reyes Magos</em> (Three Kings Day), which commemorates the gifts brought to the newborn Jesus. Our mission is to ensure every child in Santiago de Casandeje enjoys fresh <em>rosca de reyes</em> (sweet bread) and the joy of receiving a new toy on this special day.
+        <p class="text-gray-700 mb-4">
+          Mamane never attended school, as education for girls was uncommon and her days were filled with endless household responsibilities, specially living in a one parent household. Yet she was remarkably intelligent, fluent in both Mazahua and Spanish. During her adolescence, she worked grinding maize by hand to make tortillas—a staple food in her community. Neighbors often hired her to grind their maize using a traditional stone tool called a <em>metate</em>. This process was labor-intensive but completely organic: maize had to be harvested, boiled with home-made baking soda (cal), and then ground into dough. She was often seen around the village with gorgeous black long braids tied with bright, colorful ribbons.
         </p>
+        <p class="text-gray-700 mb-4">
+          As she grew older, Mamane married and raised five daughters. Like her father, she continued selling her own goods, walking miles to neighboring towns while carrying everything on her back in a <em>chiquihuite</em> (a woven basket supported by her forehead). These trips often stretched 10 kilometers each way.
+        </p>
+        <p class="text-gray-700">
+          Mamane’s bold spirit defined her. Once, when a skunk invaded her chicken coop in the middle of the night, she confronted it with her bare hands and, although it was a stinky fight, she won. She returned to her husband, who was asleep, and asked him to turn on the hot water so she could take a bath and rinse off. Another time, when mice tried to invade her home, she waited patiently for hours in the dark, then caught them with her sharp hands. Though denied formal education, Mamane carried immense wisdom and work ethic. She continues to be an inspiration for all the women in my family.
+        </p>
+        <p>Written by Kenia Machuca</p>
+      </div>
+
+      <!-- Image (Right side) -->
+      <div class="relative">
+        <img src="mamane.jpg" alt="Mamane" class="w-full h-auto rounded-lg shadow-lg">
+        <p> Mamane (right) and her daughter, Otilia (left).</p>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <h3 class="text-white text-3xl font-bold bg-black bg-opacity-50 px-6 py-2 rounded-lg">Mamane</h3>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
-
-
-
- <!--START what we do cards-->
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<section id="whatwedo" class="team-section">
-    <h2 class="whatwedo-title who-we-are-section">What We Do</h2>
-
-<style>
-   body {
-       font-family: Arial, sans-serif;
-       margin: 0;
-       padding: 20px;
-       background-color: #f5f5f5;
-   }
-
-
-   /* Container for all cards */
-   .card-container {
-       display: flex;
-       justify-content: center;
-       gap: 20px; /* space between cards */
-       flex-wrap: wrap; /* allows wrapping on smaller screens */
-   }
-
-
-   /* Card styles */
-   .card {
-       background-color: white;
-       border-radius: 10px;
-       overflow: hidden;
-       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-       width: 300px;
-   }
-
-
-   .card img {
-       width: 100%;
-       height: 200px;
-       object-fit: cover;
-   }
-
-
-   .card-content {
-       padding: 15px;
-   }
-
-
-   .card-title {
-       font-size: 1.5em;
-       margin: 0 0 10px 0;
-       color: #333;
-   }
-
-
-   .card-text {
-       font-size: 1em;
-       color: #666;
-       line-height: 1.5;
-   }
-</style>
-</head>
-<body>
-
-
-<div class="card-container">
-   <div class="card">
-       <img src="rosca.jpg" alt="Card Image 1">
-       <div class="card-content">
-           <h2 class="card-title">Rosca and Atole</h2>
-           <p class="card-text">
-              The joy of receiving a toy is complemented by a warm cup of home-made atole de avena and a warm Rosca de Reyes, honoring the flavors and customs of the holiday.
-           </p>
-       </div>
-   </div>
-
-
-   <div class="card">
-       <img src="toys.jpg" alt="Card Image 2">
-       <div class="card-content">
-           <h2 class="card-title">Toy Drive</h2>
-           <p class="card-text">
-              Each year, children of the Mazahua indigenous community receive gifts such as balls, toy cars, marbles, and even bicycles in celebration of Día de los Reyes Magos. This tradition is made possible through the generosity of our donors in the United States.
-           </p>
-       </div>
-   </div>
-
-
-   <div class="card">
-       <img src="activities.JPG" alt="Card Image 3">
-       <div class="card-content">
-           <h2 class="card-title">Community</h2>
-           <p class="card-text">
-               Fostering community is one of the core values of Un Juguete Para Cada Niño. Through activities such as piñatas and raffles, we aim to celebrate the heart of a pueblito like Santiago de Casandeje, its strong sense of togetherness.
-           </p>
-       </div>
-   </div>
-</div>
- <!--END what we do cards-->
-
-
-</body>
-</html>
-<!-- START Slideshow Section -->
-<div class="offset-nav">
-    <div class="slideshow-container">
-        <img src="main2.jpg" class="slide active" alt="Slide 1">
-        <img src="main2.jpg" class="slide" alt="Slide 2">
-        <img src="main3.jpg" class="slide" alt="Slide 3">
-        <img src="main4.jpg" class="slide" alt="Slide 4">
-        <img src="main5.jpg" class="slide" alt="Slide 5">
-        <img src="main6.jpg" class="slide" alt="Slide 6">
-        <img src="main7.jpg" class="slide" alt="Slide 7">
-    </div>
-<!-- END Slideshow Section -->
 
 </body>
 </html>
